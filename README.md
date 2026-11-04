@@ -69,7 +69,7 @@ Matchas Namespaces bleiben (`matcha`, `matcha_item`, `main`, `endless_repairs`, 
 ## Geplante Änderungen an Matcha
 
 ### Mobs
-- **Zombie-Geschwindigkeit** runter. Betroffen sind `data/matcha/function/mechanics/spawn_mechanic/{easy,normal,hard}_modifications/modify_zombie.mcfunction`. Der Zielwert ist noch offen.
+- **Zombie-Geschwindigkeit** runter: Normal 0.27 statt 0.34, Hard 0.30 statt 0.38 (umgesetzt, siehe `datapack/CHANGES.md`). Easy hat bei Matcha keine Zombie-Anpassung.
 - Die übrigen Mob-Anpassungen durchsehen.
 
 ## Keep Inventory Überarbeitung
