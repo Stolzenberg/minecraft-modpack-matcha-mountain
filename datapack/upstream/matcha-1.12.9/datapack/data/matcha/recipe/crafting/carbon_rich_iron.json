@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"ingredients": [
+		"minecraft:iron_ingot",
+		"minecraft:iron_ingot",
+		"minecraft:iron_ingot",
+		"minecraft:iron_ingot",
+		"minecraft:coal_block"
+	],
+	"result": {
+		"components": {
+			"!minecraft:entity_data": {},
+			"minecraft:custom_data": {
+				"version": 1
+			}
+		},
+		"count": 4,
+		"id": "minecraft:piglin_brute_spawn_egg"
+	}
+}

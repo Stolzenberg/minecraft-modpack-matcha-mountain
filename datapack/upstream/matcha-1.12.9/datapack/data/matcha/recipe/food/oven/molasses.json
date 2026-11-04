@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:smelting",
+	"group": "molasses",
+	"cookingtime": 100,
+	"experience": 0.01,
+	"ingredient": "minecraft:sugar_cane",
+	"result": {
+		"id": "minecraft:piglin_spawn_egg",
+		"components": {
+			"!minecraft:entity_data": {},
+			"minecraft:custom_data": {
+				"version": 1
+			}
+		}
+	}
+}

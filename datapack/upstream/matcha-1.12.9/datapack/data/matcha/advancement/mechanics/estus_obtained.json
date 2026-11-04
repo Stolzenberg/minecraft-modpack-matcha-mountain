@@ -1,0 +1,18 @@
+{
+	"parent": "matcha:imm_revoke",
+	"criteria": {
+		"has_estus": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:blaze_powder"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "matcha:mechanics/estus/check_if_estus_should_be_processed"
+	}
+}

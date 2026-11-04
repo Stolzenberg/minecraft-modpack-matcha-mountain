@@ -1,0 +1,76 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:totem_of_undying"
+				}
+			],
+			"rolls": 1
+		},
+		{
+			"condition": {
+				"type": "minecraft:killed_by_player"
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1,
+									"min": 0
+								},
+								"type": "minecraft:set_count"
+							},
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1,
+									"min": 0
+								},
+								"enchantment": "minecraft:looting",
+								"type": "minecraft:enchanted_count_increase"
+							}
+						]
+					},
+					"name": "minecraft:emerald"
+				}
+			],
+			"rolls": 1
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"value": "matcha:treasure/divine_fragment"
+				}
+			],
+			"condition": {
+				"type": "minecraft:all_of",
+				"terms": [
+					{
+						"type": "minecraft:killed_by_player"
+					},
+					{
+						"type": "minecraft:random_chance_with_enchanted_bonus",
+						"unenchanted_chance": 0.25,
+						"enchanted_chance": {
+							"type": "minecraft:linear",
+							"base": 0.35,
+							"per_level_above_first": 0.1
+						},
+						"enchantment": "minecraft:looting"
+					}
+				]
+			}
+		}
+	],
+	"random_sequence": "minecraft:entities/evoker"
+}

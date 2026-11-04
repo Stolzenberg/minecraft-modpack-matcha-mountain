@@ -1,0 +1,6 @@
+{
+  "version": "0.1.0",
+  "minecraft": "26.3",
+  "matcha_version": "1.12.9",
+  "test_instance": "~/.local/share/PrismLauncher/instances/26.3"
+}

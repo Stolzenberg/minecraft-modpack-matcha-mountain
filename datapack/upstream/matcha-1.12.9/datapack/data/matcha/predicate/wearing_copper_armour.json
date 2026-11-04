@@ -1,0 +1,76 @@
+{
+	"type": "minecraft:all_of",
+	"terms": [
+		{
+			"type": "minecraft:inverted",
+			"term": {
+				"type": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"minecraft:entity_type": "minecraft:player"
+				}
+			}
+		},
+		{
+			"type": "minecraft:any_of",
+			"terms": [
+				{
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"minecraft:equipment": {
+							"chest": {
+								"items": "minecraft:copper_chestplate",
+								"components": {
+									"minecraft:item_model": "minecraft:copper_chestplate"
+								}
+							}
+						}
+					}
+				},
+				{
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"minecraft:equipment": {
+							"head": {
+								"items": "minecraft:copper_helmet",
+								"components": {
+									"minecraft:item_model": "minecraft:copper_helmet"
+								}
+							}
+						}
+					}
+				},
+				{
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"minecraft:equipment": {
+							"legs": {
+								"items": "minecraft:copper_leggings",
+								"components": {
+									"minecraft:item_model": "minecraft:copper_leggings"
+								}
+							}
+						}
+					}
+				},
+				{
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"minecraft:equipment": {
+							"feet": {
+								"items": "minecraft:copper_boots",
+								"components": {
+									"minecraft:item_model": "minecraft:copper_boots"
+								}
+							}
+						}
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+  "pack": {
+	"min_format": [97.1],
+	"max_format": [97.1],
+    "description": [
+      {
+        "text": "Matcha Flavoured RP",
+        "color": "#56be4e"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "1.12.9 for 26.3",
+        "color": "#908b8b"
+      }
+    ]
+  }
+}

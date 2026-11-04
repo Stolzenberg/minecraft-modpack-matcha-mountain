@@ -1,0 +1,40 @@
+{
+	"max_level": 1,
+	"description": {
+		"translate": "enchantment.kleispack.warding_3",
+		"color": "yellow"
+	},
+	"supported_items": "#matcha:enchantable/warding",
+	"exclusive_set": "#matcha:exclusive_set/intrinsic_weapon",
+	"slots": [
+		"mainhand",
+		"offhand"
+	],
+	"effects": {
+		"minecraft:tick": [
+			{
+				"requirements": {
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"minecraft:entity_type": "#matcha:can_use_warding"
+					}
+				},
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "matcha:enchantment_effects/warding/add_power/equipment_3"
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 15,
+		"per_level_above_first": 0
+	},
+	"min_cost": {
+		"base": 1,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 0,
+	"weight": 1
+}

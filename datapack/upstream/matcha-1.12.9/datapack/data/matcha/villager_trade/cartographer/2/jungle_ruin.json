@@ -1,0 +1,42 @@
+{
+	"given_item_modifier": [
+		{
+			"decoration": "minecraft:jungle_temple",
+			"destination": "#minecraft:on_jungle_pyramid_maps",
+			"type": "minecraft:exploration_map",
+			"search_radius": 100
+		},
+		{
+			"type": "minecraft:filtered",
+			"item_filter": {
+				"predicates": {
+					"minecraft:map_id": {}
+				}
+			},
+			"on_fail": {
+				"type": "minecraft:discard"
+			}
+		},
+		{
+			"type": "minecraft:set_name",
+			"name": {
+				"translate": "item.minecraft.jungle_pyramid_map"
+			},
+			"target": "item_name"
+		}
+	],
+	"gives": {
+		"id": "minecraft:jungle_pyramid_map"
+	},
+	"max_uses": 999,
+	"merchant_predicate": {
+		"type": "minecraft:entity_properties",
+		"entity": "this",
+		"predicate": {}
+	},
+	"wants": {
+		"count": 1,
+		"id": "minecraft:emerald"
+	},
+	"xp": 20
+}

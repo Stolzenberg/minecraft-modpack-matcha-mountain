@@ -1,0 +1,43 @@
+{
+	"given_item_modifier": [
+		{
+			"decoration": "minecraft:banner_brown",
+			"destination": "#minecraft:on_shipwreck_explorer_maps",
+			"type": "minecraft:exploration_map",
+			"search_radius": 100
+		},
+		{
+			"type": "minecraft:filtered",
+			"item_filter": {
+				"predicates": {
+					"minecraft:map_id": {}
+				}
+			},
+			"on_fail": {
+				"type": "minecraft:discard"
+			}
+		},
+		{
+			"type": "minecraft:set_name",
+			"name": {
+				"translate": "filled_map.shipwreck"
+			},
+			"target": "item_name"
+		},
+		{
+			"type": "minecraft:set_components",
+			"components": {
+				"minecraft:item_model": "matcha:shipwreck_map"
+			}
+		}
+	],
+	"gives": {
+		"id": "minecraft:buried_treasure_map"
+	},
+	"max_uses": 999,
+	"wants": {
+		"count": 1,
+		"id": "minecraft:emerald"
+	},
+	"xp": 10
+}

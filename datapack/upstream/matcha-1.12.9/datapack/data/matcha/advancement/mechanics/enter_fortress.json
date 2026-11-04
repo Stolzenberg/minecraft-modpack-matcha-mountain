@@ -1,0 +1,27 @@
+{
+	"parent": "matcha:imm_revoke",
+	"criteria": {
+		"fortress": {
+			"conditions": {
+				"player": {
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"minecraft:location": {
+							"structures": "minecraft:fortress"
+						}
+					}
+				}
+			},
+			"trigger": "minecraft:location"
+		}
+	},
+	"requirements": [
+		[
+			"fortress"
+		]
+	],
+	"rewards": {
+		"function": "matcha:mechanics/mob_behaviours/wither_skeleton/break_block"
+	}
+}

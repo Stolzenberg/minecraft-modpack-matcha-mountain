@@ -1,0 +1,27 @@
+{
+	"wants": {
+		"id": "minecraft:emerald"
+	},
+	"gives": {
+		"id": "minecraft:paper",
+		"components": {
+			"minecraft:item_model": "matcha:warped_stroganoff_recipe",
+			"minecraft:item_name": {
+				"translate": "item.kleispack.cooking_recipe"
+			},
+			"minecraft:lore": [
+				{
+					"translate": "item.kleispack.warped_stroganoff",
+					"color": "#3cc6c8",
+					"italic": false
+				}
+			],
+			"minecraft:custom_data": {
+				"version": 1
+			}
+		}
+	},
+	"max_uses": 999,
+	"reputation_discount": 0,
+	"xp": 20
+}

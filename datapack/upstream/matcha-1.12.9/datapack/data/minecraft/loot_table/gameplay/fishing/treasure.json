@@ -1,0 +1,97 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 42,
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"add": false,
+								"damage": {
+									"type": "minecraft:uniform",
+									"max": 0.25,
+									"min": 0
+								},
+								"type": "minecraft:set_damage"
+							},
+							{
+								"type": "minecraft:enchant_with_levels",
+								"levels": 30,
+								"options": "#minecraft:on_random_loot"
+							}
+						]
+					},
+					"name": "minecraft:fishing_rod"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 30,
+					"modifier": {
+						"type": "minecraft:enchant_with_levels",
+						"levels": 30,
+						"options": "#minecraft:on_random_loot"
+					},
+					"name": "minecraft:book"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:angler_pottery_sherd",
+					"weight": 15,
+					"quality": -1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:goat_horn",
+					"modifier": {
+						"type": "minecraft:set_instrument",
+						"options": "#minecraft:regular_goat_horns"
+					},
+					"weight": 5,
+					"quality": -1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:emerald",
+					"weight": 72,
+					"modifier": {
+						"type": "minecraft:set_count",
+						"count": {
+							"type": "minecraft:uniform",
+							"min": 1,
+							"max": 2
+						}
+					}
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:chest",
+					"weight": 1,
+					"quality": 3,
+					"modifier": {
+						"type": "minecraft:set_contents",
+						"component": "minecraft:container",
+						"entries": [
+							{
+								"type": "minecraft:loot_table",
+								"value": "matcha:chests/fishing/treasure"
+							}
+						]
+					}
+				},
+				{
+					"type": "minecraft:loot_table",
+					"value": "matcha:treasure/crystal_heart",
+					"weight": 6,
+					"quality": 2
+				}
+			],
+			"rolls": 1
+		}
+	],
+	"random_sequence": "minecraft:gameplay/fishing/treasure"
+}

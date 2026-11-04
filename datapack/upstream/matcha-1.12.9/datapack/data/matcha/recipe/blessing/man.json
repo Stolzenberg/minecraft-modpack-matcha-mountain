@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"SsS",
+		"LBL",
+		"SLS"
+	],
+	"key": {
+		"S": "minecraft:blaze_spawn_egg",
+		"B": "minecraft:enchanted_book",
+		"s": "minecraft:prismarine_crystals",
+		"L": "minecraft:lapis_lazuli"
+	},
+	"result": {
+		"components": {
+			"minecraft:stored_enchantments": {
+				"matcha:warding_2": 1,
+				"minecraft:smite": 2
+			},
+			"minecraft:rarity": "rare",
+			"minecraft:item_name": {
+				"translate": "item.kleispack.blessing"
+			},
+			"minecraft:lore": [
+				{
+					"translate": "item.kleispack.blessing.man",
+					"color": "dark_gray",
+					"italic": false
+				}
+			],
+			"minecraft:item_model": "matcha:blessing_warding"
+		},
+		"count": 1,
+		"id": "minecraft:enchanted_book"
+	}
+}

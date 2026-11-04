@@ -1,0 +1,60 @@
+data modify entity @s Offers.Recipes append value \
+{\
+	"maxUses": 1,\
+	"sell": {\
+		"count": 1,\
+		"id": "minecraft:emerald"\
+	},\
+	"buy": {\
+		"count": 1,\
+		"id": "minecraft:poisonous_potato",\
+		"components": {\
+			"minecraft:item_model": "matcha:bunuelo",\
+			"minecraft:item_name": {\
+				"translate": "item.kleispack.bunuelo"\
+			},\
+			"minecraft:lore": [\
+				{\
+					"text": "\uE030\uE030\uE030",\
+					"color": "red",\
+					"italic": false\
+				},\
+				{\
+					"translate": "effect.kleispack.luck",\
+					"with": ["3:00"],\
+					"color": "dark_green",\
+					"italic": false\
+				}\
+			],\
+			"!minecraft:food": {},\
+			"minecraft:consumable": {\
+				"consume_seconds": 1.2,\
+				"has_consume_particles": true,\
+				"on_consume_effects": [\
+					{\
+						"type": "minecraft:apply_effects",\
+						"effects": [\
+							{\
+								"id": "minecraft:regeneration",\
+								"amplifier": 2,\
+								"duration": 72,\
+								"show_particles": false,\
+								"show_icon": false\
+							},\
+							{\
+								"id": "minecraft:luck",\
+								"amplifier": 0,\
+								"duration": 3600,\
+								"show_particles": false,\
+								"show_icon": true\
+							}\
+						]\
+					}\
+				]\
+			}\
+		}\
+	}\
+}\
+
+
+tag @s add foodChecked

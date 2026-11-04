@@ -1,0 +1,57 @@
+{
+	"gives": {
+		"id": "minecraft:enchanted_book",
+		"components": {
+			"minecraft:item_name": {
+				"translate": "item.kleispack.ofuda"
+			},
+			"minecraft:lore": [
+				{
+					"translate": "item.kleispack.blessing.muhammad",
+					"color": "dark_gray",
+					"italic": false
+				}
+			],
+			"minecraft:item_model": "matcha:ofuda",
+			"minecraft:stored_enchantments": {
+				"minecraft:protection": 2
+			},
+			"minecraft:custom_data": {
+				"version": 1
+			}
+		}
+	},
+	"max_uses": 999,
+	"reputation_discount": 0,
+	"wants": {
+		"count": 1,
+		"id": "minecraft:book",
+		"components": {
+			"minecraft:item_name": {
+				"translate": "item.kleispack.quran"
+			},
+			"minecraft:rarity": "rare",
+			"minecraft:item_model": "matcha:quran",
+			"minecraft:lore": [
+				{
+					"translate": "item.kleispack.quran.desc",
+					"color": "gray",
+					"italic": false
+				}
+			]
+		}
+	},
+	"additional_wants": {
+		"count": 1,
+		"id": "minecraft:poisonous_potato",
+		"components": {
+			"minecraft:item_model": "matcha:heart_container",
+			"minecraft:item_name": {
+				"translate": "item.kleispack.crystal_heart"
+			},
+			"minecraft:rarity": "rare",
+			"minecraft:enchantment_glint_override": true
+		}
+	},
+	"xp": 30
+}

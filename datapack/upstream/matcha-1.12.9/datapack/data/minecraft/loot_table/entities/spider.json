@@ -1,0 +1,98 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 2.0,
+									"min": 0.0
+								},
+								"type": "minecraft:set_count"
+							},
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1.0,
+									"min": 0.0
+								},
+								"enchantment": "minecraft:looting",
+								"type": "minecraft:enchanted_count_increase"
+							}
+						]
+					},
+                    "name": "minecraft:string"
+                }
+            ],
+            "condition": {
+				"type": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"entity_tags": {
+						"none_of": [
+							"NoDrops"
+						]
+					}
+				}
+			},
+            "rolls": 1
+        },
+        {
+            "condition": {
+				"type": "minecraft:all_of",
+				"terms": [
+					{
+						"type": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"entity_tags": {
+								"none_of": [
+									"NoDrops"
+								]
+							}
+						}
+					},
+					{
+						"type": "minecraft:killed_by_player"
+				  }
+			  ]
+		  },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1.0,
+									"min": -1.0
+								},
+								"type": "minecraft:set_count"
+							},
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1.0,
+									"min": 0.0
+								},
+								"enchantment": "minecraft:looting",
+								"type": "minecraft:enchanted_count_increase"
+							}
+						]
+					},
+                    "name": "minecraft:spider_eye"
+                }
+            ],
+            "rolls": 1
+        }
+    ],
+    "random_sequence": "minecraft:entities/spider"
+}

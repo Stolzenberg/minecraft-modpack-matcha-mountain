@@ -1,0 +1,196 @@
+{
+	"custom.false_subwoofer_lullaby": {
+		"sounds": [
+			{
+				"name": "matcha:custom/false_subwoofer_lullaby",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"custom.golden": {
+		"sounds": [
+			{
+				"name": "matcha:custom/golden_demo",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"custom.crete": {
+		"sounds": [
+			{
+				"name": "matcha:custom/crete",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"custom.background.abbey": {
+		"sounds": [
+			{
+				"name": "matcha:custom/background/abbey",
+				"volume": 0.7,
+				"stream": true
+			}
+		]
+	},
+	"custom.elegy_of_the_abbey": {
+		"sounds": [
+			{
+				"name": "matcha:custom/elegy_of_the_abbey",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"custom.malachite": {
+		"sounds": [
+			{
+				"name": "matcha:custom/malachite",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"fishing.1_star": {
+		"subtitle": "subtitles.kleispack.fishing.1_star",
+		"sounds": [
+			{
+				"name": "matcha:custom/fishing/1_star",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"fishing.2_star": {
+		"subtitle": "subtitles.kleispack.fishing.2_star",
+		"sounds": [
+			{
+				"name": "matcha:custom/fishing/2_star",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"fishing.3_star": {
+		"subtitle": "subtitles.kleispack.fishing.3_star",
+		"sounds": [
+			{
+				"name": "matcha:custom/fishing/3_star",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"fishing.4_star": {
+		"subtitle": "subtitles.kleispack.fishing.4_star",
+		"sounds": [
+			{
+				"name": "matcha:custom/fishing/4_star",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"fishing.junk": {
+		"subtitle": "subtitles.kleispack.fishing.junk",
+		"sounds": [
+			{
+				"name": "matcha:custom/fishing/junk",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"fishing.treasure": {
+		"subtitle": "subtitles.kleispack.fishing.treasure",
+		"sounds": [
+			{
+				"name": "matcha:custom/fishing/treasure",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"fishing.axolotl": {
+		"subtitle": "subtitles.kleispack.fishing.axolotl",
+		"sounds": [
+			{
+				"name": "matcha:custom/fishing/axolotl",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"fishing.fish_bones": {
+		"subtitle": "subtitles.kleispack.fishing.fish_bones",
+		"sounds": [
+			{
+				"name": "matcha:custom/fishing/fish_bones",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"fishing.enchanted_book": {
+		"subtitle": "subtitles.kleispack.fishing.enchanted_book",
+		"sounds": [
+			{
+				"name": "matcha:custom/fishing/enchanted_book",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"fishing.nautilus_shell": {
+		"subtitle": "subtitles.kleispack.fishing.nautilus_shell",
+		"sounds": [
+			{
+				"name": "matcha:custom/fishing/nautilus_shell",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"fishing.frog": {
+		"subtitle": "subtitles.kleispack.fishing.frog",
+		"sounds": [
+			{
+				"name": "matcha:custom/fishing/frog",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"entity.bobwhite.ambient": {
+		"sounds": [
+			{
+				"name": "matcha:custom/mob/chicken/bobwhite/say1",
+				"volume": 0.6
+			},
+			{
+				"name": "matcha:custom/mob/chicken/bobwhite/say2",
+				"volume": 0.6
+			},
+			{
+				"name": "matcha:custom/mob/chicken/bobwhite/say3",
+				"volume": 0.6
+			},
+			{
+				"name": "matcha:custom/mob/chicken/bobwhite/say4",
+				"volume": 0.6
+			}
+		],
+		"subtitle": "subtitles.kleispack.bobwhite"
+	},
+	"entity.bobwhite.hurt": {
+		"sounds": [
+			{
+				"name": "matcha:custom/mob/chicken/bobwhite/hurt",
+				"volume": 1.0
+			}
+		],
+		"subtitle": "subtitles.kleispack.bobwhite"
+	}
+}

@@ -1,0 +1,51 @@
+{
+	"type": "minecraft:any_of",
+	"terms": [
+		{
+			"type": "minecraft:any_of",
+			"terms": [
+				{
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"minecraft:location": {
+							"can_see_sky": false
+						}
+					}
+				},
+				{
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"minecraft:location": {
+							"position": {
+								"y": {
+									"min": -65,
+									"max": 62
+								}
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"type": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"location": {
+					"dimension": "minecraft:the_nether"
+				}
+			}
+		},
+		{
+			"type": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"location": {
+					"dimension": "minecraft:the_end"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,201 @@
+{
+	"parent": "matcha:hell/craft_hell_bound_book",
+	"criteria": {
+		"talos": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/talos"
+			}
+		},
+		"glaucus": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/glaucus"
+			}
+		},
+		"cronus": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/cronus"
+			}
+		},
+		"artemis": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/artemis"
+			}
+		},
+		"ares": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/ares"
+			}
+		},
+		"apollo": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/apollo"
+			}
+		},"arachnae": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/arachnae"
+			}
+		},
+		"god_king": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/god_king"
+			}
+		},
+		"yamm": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/yamm"
+			}
+		},
+		"daedalus": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/daedalus"
+			}
+		},
+		"icarus": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/icarus"
+			}
+		},
+		"yama": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/yama"
+			}
+		},
+		"paris": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/paris"
+			}
+		},
+		"lu_ban": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/lu_ban"
+			}
+		},
+		"will": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/will"
+			}
+		},
+		"eros": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/eros"
+			}
+		},
+		"clement": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/clement"
+			}
+		},
+		"prometheus": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/prometheus"
+			}
+		},
+		"man": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/man"
+			}
+		},
+		"demeter": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/demeter"
+			}
+		},
+		"aeolus": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/aeolus"
+			}
+		},
+		"hyacinthus": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/hyacinthus"
+			}
+		},
+		"midas": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/midas"
+			}
+		}
+	},
+	"display": {
+		"description": [
+			{
+				"text": "\uE00F\uE00F ",
+				"color": "#ac7b5c"
+			},
+			{
+				"translate": "adv.kleispack.hell.craft_blessing.desc",
+				"color": "gray"
+			}
+		],
+		"icon": {
+			"components": {
+				"minecraft:stored_enchantments": {
+					"minecraft:flame": 1
+				},
+				"minecraft:item_model": "matcha:blessing_prometheus"
+			},
+			"count": 1,
+			"id": "minecraft:enchanted_book"
+		},
+		"title": {
+			"translate": "adv.kleispack.hell.craft_blessing"
+		},
+		"frame": "goal",
+		"hidden": false
+	},
+	"requirements": [
+		[
+			"aeolus",
+			"apollo",
+			"arachnae",
+			"ares",
+			"artemis",
+			"clement",
+			"cronus",
+			"daedalus",
+			"demeter",
+			"eros",
+			"glaucus",
+			"god_king",
+			"hyacinthus",
+			"icarus",
+			"lu_ban",
+			"man",
+			"midas",
+			"paris",
+			"prometheus",
+			"talos",
+			"will",
+			"yama",
+			"yamm"
+		]
+	],
+	"rewards": {
+		"loot": [
+			"matcha:advancement/obol_2"
+		]
+	}
+}

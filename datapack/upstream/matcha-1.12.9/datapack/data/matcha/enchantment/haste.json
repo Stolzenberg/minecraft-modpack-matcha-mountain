@@ -1,0 +1,39 @@
+{
+	"max_level": 1,
+	"description": {
+		"translate": "enchantment.kleispack.haste",
+		"color": "yellow"
+	},
+	"supported_items": "#minecraft:head_armor",
+	"exclusive_set": "#matcha:exclusive_set/permanent_effect",
+	"slots": [
+		"head"
+	],
+	"effects": {
+		"minecraft:tick": [
+			{
+				"requirements": {
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"minecraft:entity_type": "minecraft:player"
+					}
+				},
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "matcha:enchantment_effects/haste"
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 15,
+		"per_level_above_first": 0
+	},
+	"min_cost": {
+		"base": 1,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 0,
+	"weight": 1
+}

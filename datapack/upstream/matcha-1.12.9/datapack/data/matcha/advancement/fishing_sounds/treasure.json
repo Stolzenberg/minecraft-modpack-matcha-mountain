@@ -1,0 +1,32 @@
+{
+	"parent": "matcha:imm_revoke",
+	"criteria": {
+		"from_tag": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"item": {
+					"items": "#matcha:fishing_rarity/treasure"
+				}
+			}
+		},
+		"crystal_heart": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"item": {
+					"components": {
+						"minecraft:item_model": "matcha:crystal_heart"
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"from_tag",
+			"crystal_heart"
+		]
+	],
+	"rewards": {
+		"function": "matcha:sound_fx/treasure"
+	}
+}

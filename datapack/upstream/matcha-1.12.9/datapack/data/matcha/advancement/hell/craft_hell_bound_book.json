@@ -1,0 +1,67 @@
+{
+	"parent": "matcha:hell/obtain_stabilised_estus",
+	"criteria": {
+		"hell_bound_book": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/hell_bound_book"
+			}
+		}
+	},
+	"display": {
+		"description": [
+			{
+				"text": " ",
+				"color": "#ac7b5c"
+			},
+			{
+				"translate": "adv.kleispack.hell.craft_hell_bound_book.desc",
+				"color": "gray"
+			}
+		],
+		"icon": {
+			"count": 1,
+			"id": "minecraft:enchanted_book"
+		},
+		"title": {
+			"translate": "adv.kleispack.hell.craft_hell_bound_book"
+		},
+		"frame": "task",
+		"hidden": false
+	},
+	"requirements": [
+		[
+			"hell_bound_book"
+		]
+	],
+	"rewards": {
+		"loot": [
+			"matcha:advancement/obol_1"
+		],
+		"recipes": [
+			"matcha:blessing/aeolus",
+			"matcha:blessing/apollo",
+			"matcha:blessing/arachnae",
+			"matcha:blessing/ares",
+			"matcha:blessing/artemis",
+			"matcha:blessing/clement",
+			"matcha:blessing/cronus",
+			"matcha:blessing/daedalus",
+			"matcha:blessing/demeter",
+			"matcha:blessing/eros",
+			"matcha:blessing/glaucus",
+			"matcha:blessing/god_king",
+			"matcha:blessing/hyacinthus",
+			"matcha:blessing/icarus",
+			"matcha:blessing/lu_ban",
+			"matcha:blessing/man",
+			"matcha:blessing/midas",
+			"matcha:blessing/paris",
+			"matcha:blessing/prometheus",
+			"matcha:blessing/talos",
+			"matcha:blessing/will",
+			"matcha:blessing/yama",
+			"matcha:blessing/yamm"
+		]
+	}
+}

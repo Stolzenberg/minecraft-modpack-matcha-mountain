@@ -1,0 +1,25 @@
+{
+	"parent": "matcha:imm_revoke",
+	"criteria": {
+		"summon_wither": {
+			"conditions": {
+				"entity": {
+					"type": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+						"minecraft:entity_type": "minecraft:wither"
+					}
+				}
+			},
+			"trigger": "minecraft:summoned_entity"
+		}
+	},
+	"requirements": [
+		[
+			"summon_wither"
+		]
+	],
+	"rewards": {
+		"function": "matcha:mechanics/wither/schedule_check"
+	}
+}

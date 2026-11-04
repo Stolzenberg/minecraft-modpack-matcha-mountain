@@ -1,0 +1,43 @@
+{
+	"max_level": 1,
+	"description": {
+		"translate": "enchantment.kleispack.magic_protection",
+		"color": "#c96691"
+	},
+	"supported_items": "#minecraft:enchantable/armor",
+	"exclusive_set": "#minecraft:exclusive_set/armor",
+	"slots": [
+		"armor"
+	],
+	"effects": {
+		"minecraft:damage_protection": [
+			{
+				"requirements": {
+					"type": "minecraft:damage_source_properties",
+					"predicate": {
+						"tags": [
+							{
+								"id": "#minecraft:is_magic",
+								"expected": true
+							}
+						]
+					}
+				},
+				"effect": {
+					"type": "minecraft:add",
+					"value": 8
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"min_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 0,
+	"weight": 5
+}

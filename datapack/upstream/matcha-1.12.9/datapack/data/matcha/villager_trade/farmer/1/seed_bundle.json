@@ -1,0 +1,66 @@
+{
+	"gives": {
+		"id": "minecraft:bundle",
+		"components": {
+			"minecraft:item_model": "matcha:seed_bundle",
+			"minecraft:item_name": {
+				"translate": "item.kleispack.bundle.seed"
+			},
+			"minecraft:bundle_contents": [
+				{
+					"id": "minecraft:wheat_seeds",
+					"count": 16
+				},
+				{
+					"id": "beetroot_seeds",
+					"count": 16
+				},
+				{
+					"id": "minecraft:carrot",
+					"count": 4,
+					"components": {
+						"minecraft:lore": [
+							{
+								"text": "\uE032",
+								"color": "red",
+								"italic": false
+							}
+						],
+						"minecraft:consumable": {
+							"consume_seconds": 1.6,
+							"has_consume_particles": true,
+							"on_consume_effects": [
+								{
+									"type": "minecraft:apply_effects",
+									"effects": [
+										{
+											"id": "minecraft:regeneration",
+											"amplifier": 2,
+											"duration": 12,
+											"show_particles": false,
+											"show_icon": false
+										}
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": "minecraft:potato",
+					"count": 4
+				}
+			],
+			"minecraft:custom_data": {
+				"version": 1
+			}
+		},
+		"count": 1
+	},
+	"max_uses": 999,
+	"wants": {
+		"count": 1,
+		"id": "minecraft:emerald"
+	},
+	"xp": 10
+}

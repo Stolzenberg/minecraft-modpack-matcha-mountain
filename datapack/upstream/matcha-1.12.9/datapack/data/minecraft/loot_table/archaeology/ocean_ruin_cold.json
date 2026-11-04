@@ -1,0 +1,61 @@
+{
+	"type": "minecraft:archaeology",
+	"pools": [
+		{
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:blade_pottery_sherd"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:explorer_pottery_sherd"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:mourner_pottery_sherd"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:plenty_pottery_sherd"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"value": "matcha:equipment/misc/rusty_axe"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:emerald",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:ink_sac",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:coal",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gold_nugget",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:loot_table",
+					"value": "matcha:equipment/misc/trident",
+					"quality": 3
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:nautilus_shell",
+					"quality": 1
+				}
+			],
+			"rolls": 1
+		}
+	],
+	"random_sequence": "minecraft:archaeology/ocean_ruin_cold"
+}

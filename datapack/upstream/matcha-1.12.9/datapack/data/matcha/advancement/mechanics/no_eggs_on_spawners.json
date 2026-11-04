@@ -1,0 +1,35 @@
+{
+	"parent": "matcha:imm_revoke",
+	"criteria": {
+		"used_egg": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"type": "minecraft:all_of",
+					"terms": [
+						{
+							"type": "minecraft:match_tool",
+							"predicate": {
+								"items": "#matcha:spawn_eggs"
+							}
+						},
+						{
+							"type": "minecraft:location_check",
+							"predicate": {
+								"block": {
+									"blocks": [
+										"minecraft:spawner",
+										"minecraft:trial_spawner"
+									]
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "matcha:mechanics/no_egg_on_spawner"
+	}
+}

@@ -1,0 +1,258 @@
+{
+	"max_level": 3,
+	"description": {
+		"translate": "enchantment.kleispack.traversal"
+	},
+	"supported_items": "#minecraft:enchantable/foot_armor",
+	"slots": [
+		"feet"
+	],
+	"effects": {
+		"minecraft:location_changed": [
+			{
+				"requirements": {
+					"type": "minecraft:all_of",
+					"terms": [
+						{
+							"type": "minecraft:entity_scores",
+							"entity": "this",
+							"scores": {
+								"TraversalBuffer": {
+									"min": 1
+								}
+							}
+						},
+						{
+							"type": "minecraft:inverted",
+							"term": {
+								"type": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"minecraft:vehicle": {}
+								}
+							}
+						},
+						{
+							"type": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"minecraft:flags": {
+									"is_flying": false
+								}
+							}
+						}
+					]
+				},
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:attribute",
+							"id": "matcha:enchantment.traversal",
+							"attribute": "minecraft:movement_speed",
+							"operation": "add_value",
+							"amount": {
+								"type": "minecraft:linear",
+								"base": 0.0155,
+								"per_level_above_first": 0.0155
+							}
+						}
+					]
+				}
+			},
+			{
+				"requirements": {
+					"type": "minecraft:all_of",
+					"terms": [
+						{
+							"type": "minecraft:entity_scores",
+							"entity": "this",
+							"scores": {
+								"TraversalBuffer": {
+									"min": 1
+								}
+							}
+						},
+						{
+							"type": "minecraft:random_chance",
+							"chance": {
+								"type": "minecraft:enchantment_level",
+								"amount": 0.04
+							}
+						},
+						{
+							"type": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"minecraft:flags": {
+									"is_flying": false,
+									"is_on_ground": true
+								}
+							}
+						}
+					]
+				},
+				"effect": {
+					"type": "minecraft:change_item_damage",
+					"amount": 1
+				}
+			}
+		],
+		"minecraft:tick": [
+			{
+				"requirements": {
+					"type": "minecraft:all_of",
+					"terms": [
+						{
+							"type": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"minecraft:flags": {
+									"is_flying": false,
+									"is_on_ground": true
+								},
+								"minecraft:movement": {
+									"horizontal_speed": {
+										"min": 0.000009999999747378752
+									}
+								}
+							}
+						},
+						{
+							"type": "minecraft:inverted",
+							"term": {
+								"type": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"minecraft:vehicle": {}
+								}
+							}
+						},
+						{
+							"type": "minecraft:any_of",
+							"terms": [
+								{
+									"type": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"movement_affected_by": {
+											"block": {
+												"blocks": "#matcha:is_path"
+											}
+										}
+									}
+								},
+								{
+									"type": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"stepping_on": {
+											"block": {
+												"blocks": "#matcha:is_path"
+											}
+										}
+									}
+								}
+							]
+						}
+					]
+				},
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "matcha:enchantment_effects/traversal"
+				}
+			},
+			{
+				"requirements": {
+					"type": "minecraft:all_of",
+					"terms": [
+						{
+							"type": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"minecraft:periodic_tick": 5,
+								"minecraft:flags": {
+									"is_flying": false,
+									"is_on_ground": true
+								},
+								"minecraft:movement": {
+									"horizontal_speed": {
+										"min": 0.000009999999747378752
+									}
+								}
+							}
+						},
+						{
+							"type": "minecraft:inverted",
+							"term": {
+								"type": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"minecraft:vehicle": {}
+								}
+							}
+						},
+						{
+							"type": "minecraft:any_of",
+							"terms": [
+								{
+									"type": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"movement_affected_by": {
+											"block": {
+												"blocks": "#matcha:is_path"
+											}
+										}
+									}
+								},
+								{
+									"type": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"stepping_on": {
+											"block": {
+												"blocks": "#matcha:is_path"
+											}
+										}
+									}
+								}
+							]
+						}
+					]
+				},
+				"effect": {
+					"type": "minecraft:spawn_particles",
+					"particle": {
+						"type": "minecraft:block",
+						"block_state": "minecraft:dirt"
+					},
+					"horizontal_position": {
+						"type": "in_bounding_box"
+					},
+					"vertical_position": {
+						"type": "entity_position",
+						"offset": 0.1
+					},
+					"horizontal_velocity": {
+						"movement_scale": -0.2
+					},
+					"vertical_velocity": {
+						"base": 0.1
+					},
+					"speed": 1
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 25,
+		"per_level_above_first": 10
+	},
+	"min_cost": {
+		"base": 10,
+		"per_level_above_first": 10
+	},
+	"anvil_cost": 8,
+	"weight": 1
+}

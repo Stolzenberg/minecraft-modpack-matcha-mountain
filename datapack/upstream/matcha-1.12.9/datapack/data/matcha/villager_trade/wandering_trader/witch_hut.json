@@ -1,0 +1,46 @@
+{
+	"given_item_modifier": {
+		"type": "sequence",
+		"functions": [
+			{
+				"decoration": "minecraft:swamp_hut",
+				"destination": "#minecraft:on_swamp_hut_maps",
+				"type": "minecraft:exploration_map",
+				"search_radius": 100
+			},
+			{
+				"type": "minecraft:set_name",
+				"name": {
+					"translate": "item.minecraft.swamp_hut_map"
+				},
+				"target": "item_name"
+			},
+			{
+				"type": "minecraft:filtered",
+				"item_filter": {
+					"items": "minecraft:filled_map",
+					"predicates": {
+						"minecraft:map_id": {}
+					}
+				},
+				"on_fail": {
+					"type": "minecraft:discard"
+				}
+			}
+		]
+	},
+	"gives": {
+		"id": "minecraft:map"
+	},
+	"max_uses": 1,
+	"xp": 0,
+	"merchant_predicate": {
+		"type": "minecraft:entity_properties",
+		"entity": "this",
+		"predicate": {}
+	},
+	"wants": {
+		"count": 1,
+		"id": "minecraft:emerald"
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"ingredients": [
+		"minecraft:azure_bluet",
+		"minecraft:sugar",
+		"minecraft:glowstone_dust",
+		"minecraft:paper"
+	],
+	"result": {
+		"count": 1,
+		"id": "minecraft:poisonous_potato",
+		"components": {
+			"minecraft:item_model": "matcha:amnestic_wrapped",
+			"minecraft:custom_name": {
+				"translate": "item.kleispack.amnestic",
+				"color": "white",
+				"italic": false
+			},
+			"minecraft:lore": [
+				{
+					"translate": "item.kleispack.amnestic.desc",
+					"color": "gray",
+					"italic": false
+				}
+			],
+			"!minecraft:food": {},
+			"minecraft:consumable": {
+				"consume_seconds": 1.6,
+				"has_consume_particles": true,
+				"!on_consume_effects": {}
+			},
+			"minecraft:custom_data": {
+				"version": 1
+			}
+		}
+	}
+}

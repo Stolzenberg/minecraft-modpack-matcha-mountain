@@ -1,0 +1,29 @@
+{
+	"parent": "matcha:imm_revoke",
+	"criteria": {
+		"on_sulfur": {
+			"conditions": {
+				"player": {
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"minecraft:stepping_on": {
+							"block": {
+								"blocks": "#matcha:emits_sulfur_particles"
+							}
+						}
+					}
+				}
+			},
+			"trigger": "minecraft:location"
+		}
+	},
+	"requirements": [
+		[
+			"on_sulfur"
+		]
+	],
+	"rewards": {
+		"function": "matcha:particle/sulfurous_hellstone"
+	}
+}

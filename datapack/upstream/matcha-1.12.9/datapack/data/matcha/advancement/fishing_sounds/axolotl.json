@@ -1,0 +1,21 @@
+{
+	"parent": "matcha:imm_revoke",
+	"criteria": {
+		"from_tag": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"item": {
+					"items": "#matcha:fishing_rarity/axolotl"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"from_tag"
+		]
+	],
+	"rewards": {
+		"function": "matcha:sound_fx/axolotl"
+	}
+}

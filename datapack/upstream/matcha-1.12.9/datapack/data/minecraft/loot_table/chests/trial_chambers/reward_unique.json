@@ -1,0 +1,51 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"value": "matcha:food/minecraft/golden_apple",
+					"weight": 4
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bolt_armor_trim_smithing_template",
+					"weight": 3
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:guster_banner_pattern",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:music_disc_precipice",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:loot_table",
+					"value": "matcha:equipment/misc/trident",
+					"quality": 1
+				},
+				{
+					"type": "minecraft:loot_table",
+					"value": "matcha:treasure/crystal_heart",
+					"weight": 4
+				},
+				{
+					"type": "minecraft:loot_table",
+					"value": "matcha:treasure/tanakh",
+					"weight": 1
+				},
+				{
+					"type": "minecraft:loot_table",
+					"value": "matcha:treasure/quran",
+					"weight": 1
+				}
+			],
+			"rolls": 1
+		}
+	],
+	"random_sequence": "minecraft:chests/trial_chambers/reward_unique"
+}

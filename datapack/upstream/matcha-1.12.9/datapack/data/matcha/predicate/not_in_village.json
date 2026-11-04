@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:inverted",
+	"term": {
+		"type": "minecraft:any_of",
+		"terms": [
+			{
+				"type": "minecraft:location_check",
+				"predicate": {
+					"structures": "#minecraft:village"
+				}
+			}
+		]
+	}
+}

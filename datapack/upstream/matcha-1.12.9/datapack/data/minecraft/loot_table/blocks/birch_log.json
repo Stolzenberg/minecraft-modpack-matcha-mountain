@@ -1,0 +1,54 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"condition": {
+				"type": "minecraft:survives_explosion"
+			},
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"condition": {
+								"type": "minecraft:match_tool",
+								"predicate": {
+									"predicates": {
+										"minecraft:enchantments": [
+											{
+												"enchantments": "matcha:adamant_tool"
+											}
+										]
+									}
+								}
+							},
+							"modifier": {
+								"type": "minecraft:sequence",
+								"functions": [
+									{
+										"enchantment": "minecraft:fortune",
+										"formula": "minecraft:ore_drops",
+										"type": "minecraft:apply_bonus"
+									},
+									{
+										"type": "minecraft:apply_bonus",
+										"enchantment": "matcha:electrum_tool",
+										"formula": "minecraft:ore_drops"
+									}
+								]
+							},
+							"name": "minecraft:charcoal"
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:birch_log"
+						}
+					]
+				}
+			],
+			"rolls": 1
+		}
+	],
+	"random_sequence": "minecraft:blocks/birch_log"
+}

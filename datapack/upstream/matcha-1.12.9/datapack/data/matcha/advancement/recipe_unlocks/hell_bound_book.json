@@ -1,0 +1,43 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"made_hell_bound_book": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipes": "matcha:blessing/hell_bound_book"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"made_hell_bound_book"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"matcha:blessing/arachnae",
+			"matcha:blessing/god_king",
+			"matcha:blessing/talos",
+			"matcha:blessing/yamm",
+			"matcha:blessing/daedalus",
+			"matcha:blessing/icarus",
+			"matcha:blessing/yama",
+			"matcha:blessing/demeter",
+			"matcha:blessing/paris",
+			"matcha:blessing/ares",
+			"matcha:blessing/glaucus",
+			"matcha:blessing/lu_ban",
+			"matcha:blessing/apollo",
+			"matcha:blessing/artemis",
+			"matcha:blessing/will",
+			"matcha:blessing/eros",
+			"matcha:blessing/cronus",
+			"matcha:blessing/clement",
+			"matcha:blessing/prometheus",
+			"matcha:blessing/man",
+			"matcha:blessing/aeolus",
+			"matcha:blessing/hyacinthus",
+			"matcha:blessing/midas"
+		]
+	}
+}

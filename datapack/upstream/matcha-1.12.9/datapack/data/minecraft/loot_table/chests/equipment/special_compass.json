@@ -1,0 +1,53 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:compass",
+					"quality": 2,
+					"modifier": {
+						"type": "minecraft:set_components",
+						"components": {
+							"minecraft:item_model": "matcha:titanium_compass",
+							"minecraft:item_name": {
+								"translate": "item.kleispack.titanium_compass"
+							}
+						}
+					}
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:compass",
+					"quality": 1,
+					"modifier": {
+						"type": "minecraft:set_components",
+						"components": {
+							"minecraft:item_model": "matcha:golden_compass",
+							"minecraft:item_name": {
+								"translate": "item.kleispack.golden_compass"
+							}
+						}
+					}
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:compass",
+					"modifier": {
+						"type": "minecraft:set_components",
+						"components": {
+							"minecraft:item_model": "matcha:copper_compass",
+							"minecraft:item_name": {
+								"translate": "item.kleispack.copper_compass"
+							}
+						}
+					}
+				}
+			]
+		}
+	],
+	"random_sequence": "matcha:kleis_items"
+}

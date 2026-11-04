@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "flour",
+	"category": "misc",
+	"ingredients": [
+		[
+			"minecraft:magma_cube_spawn_egg"
+		]
+	],
+	"result": {
+		"id": "minecraft:enderman_spawn_egg",
+		"components": {
+			"!minecraft:entity_data": {},
+			"minecraft:custom_data": {
+				"version": 1
+			}
+		},
+		"count": 9
+	}
+}

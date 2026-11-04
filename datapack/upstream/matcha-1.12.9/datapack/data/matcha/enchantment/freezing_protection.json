@@ -1,0 +1,49 @@
+{
+	"max_level": 3,
+	"description": {
+		"translate": "enchantment.kleispack.freezing_protection"
+	},
+	"supported_items": "#minecraft:enchantable/chest_armor",
+	"slots": [
+		"armor"
+	],
+	"effects": {
+		"minecraft:damage_protection": [
+			{
+				"requirements": {
+					"type": "minecraft:damage_source_properties",
+					"predicate": {
+						"tags": [
+							{
+								"expected": true,
+								"id": "#minecraft:is_freezing"
+							},
+							{
+								"expected": false,
+								"id": "#minecraft:bypasses_invulnerability"
+							}
+						]
+					}
+				},
+				"effect": {
+					"type": "minecraft:add",
+					"value": {
+						"type": "minecraft:linear",
+						"base": 24,
+						"per_level_above_first": 24
+					}
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 9,
+		"per_level_above_first": 6
+	},
+	"min_cost": {
+		"base": 3,
+		"per_level_above_first": 6
+	},
+	"anvil_cost": 2,
+	"weight": 5
+}
