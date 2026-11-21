@@ -1,0 +1,10 @@
+# Matcha Mountain: Effekte aus, die andere Mods schon liefern.
+# Fehlende Schlüssel ergänzt Particular beim Start mit Standardwerten.
+[general.enabledEffects]
+	# Wasserfälle: Gischt und Schaum kommen von Streams Reflowing
+	cascades = false
+	waterfallSpray = false
+	# Fallende Blätter kommen von Fallingleaves
+	fallingLeaves = false
+	# Regen-Ripples kommen von Particle Rain
+	rainRipples = false

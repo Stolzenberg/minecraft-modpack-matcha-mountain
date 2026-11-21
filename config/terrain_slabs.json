@@ -1,0 +1,9 @@
+{
+  "enableSlabGeneration": true,
+  "enableVegetationOnSlabs": true,
+  "enableSnowOnSlabs": true,
+  "enableCornerSlabs": false,
+  "slabRunLength": 2,
+  "enableAutomaticSlabMatching": false,
+  "slabAoStrength": 0.5
+}
